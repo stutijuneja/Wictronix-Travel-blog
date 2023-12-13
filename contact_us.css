@@ -1,0 +1,77 @@
+/* styles.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f9fa; /* Light background color */
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.contact-section {
+  padding: 50px 0;
+}
+
+.company-logo {
+  width: 60px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* White background for cards */
+  transition: transform 0.3s ease; /* Add a subtle transform effect on hover */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Enlarge the card on hover */
+}
+
+.card-title {
+  color: #1f1f20; /* Blue title color */
+}
+
+.card-text {
+  color: #495057; /* Dark gray text color */
+}
+
+ul {
+  text-align: justify;
+}
+.card-body {
+  text-align: center;
+}
+
+.card-body a {
+  color: #202122;
+  text-decoration: none;
+}
+
+.card-body a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the section heading */
+.section-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-heading h2 {
+  color: #141414;
+}
+
+/* Styling for the footer */
+.footer {
+  background-color: #343a40; /* Dark background color for the footer */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
