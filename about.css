@@ -107,7 +107,6 @@ li {
   flex-direction: row;
   justify-items: center;
   align-items: flex-start;
-  column-gap: 4rem;
 }
 
 #card1,
