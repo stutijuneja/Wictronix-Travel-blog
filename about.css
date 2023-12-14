@@ -94,92 +94,141 @@ li {
 .page2 {
   min-height: 150vh;
   width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between ;
 }
 
 .intro-cards {
   /* background: rgba(220, 220, 220, 0.907); */
   margin-top: 25vh;
   padding: 2rem;
+  justify-content: space-between;
 }
 
 .card {
   display: flex;
   flex-direction: row;
-  justify-items: center;
-  align-items: flex-start;
+  align-items:start;
   column-gap: 4rem;
 }
 
-#card1,
-#card2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.card1 {
+  justify-content: flex-start;
+}
+
+.card2 {
+  justify-content: flex-end;
+}
+
+.card1,
+.card2 {
+ width:  19vw;
 }
 
 .profile {
   width: 25vw;
 }
 
-.profile-pic {
-  height: 63vh;
-  width: 100%;
+.card-img-1{
+  height: auto;
+  width: 20vw;
   display: flex;
-  justify-content: center;
+  align-items: start;
+  justify-content: space-around;
   margin-bottom: 2rem;
 }
 
-#card1 p,
-#card2 p {
-  text-decoration: none;
-  font-size: 1.6vw;
-  margin-bottom: 2em;
+.card-img-2{
+  height: auto;
+  width: 22vw;
   display: flex;
-  align-items: start;
-  justify-content: start;
-  text-align: justify;
+  align-items: end;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.card1 p,
+.card2 p {
+  text-decoration: none;
+  font-size: 1.5vw;
+  margin-bottom: 2em;
   font-family: sans-serif;
   font-weight: 550;
   color: black;
 }
 
-.socials {
-  display: flex;
-  justify-content: space-between;
-}
-
-.socials1,
-.socials2 {
-  position: relative;
-  cursor: pointer;
-  margin: 10px;
-}
-
+/* 
 .social-icons {
-  position: absolute;
+  position: fixed;
+  display: flex;
   align-items: center;
   justify-content: center;
   top: 100%;
-  left: 2;
-  width: 100%;
+  left:auto;
+  width: 22vw;
   display: none;
   background: linear-gradient(to right, #22333b, #eae0d5);
   border-radius: 25px;
   padding: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 1;
-}
+} */
 
-.socials1:hover .social-icons,
+/* .socials1:hover .social-icons,
 .socials2:hover .social-icons {
   display: flex;
-}
+} */
 
-.social-icon {
-  margin-right: 0px;
+/* .social-icon {
+  margin-right: 5px;
   padding: 7px;
-}
+} */
 
 .social-media {
-  letter-spacing: 12px;
+  letter-spacing: 10px;
+}
+
+@media (max-width: 768px) {  /* This breakpoint can be adjusted based on your design */
+  .page1 {
+    display: flex;
+    flex-direction: column;
+    min-height: unset; /* Allow content to dictate height */
+}
+
+#nav {
+    height: auto; /* Adjust height as needed */
+    justify-content: space-between;
+  }
+
+  .page2 {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .intro-cards {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: flex-start; /* Adjust based on desired text alignment */
+    margin: 1rem 0;
+  }
+
+  .card1, .card2 {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .social-icons {
+    width: 100%; /* Make icons full width on mobile */
+    left: 0; /* Remove offset on smaller screens */
+    top: auto; /* Show icons below instead of overlapping */
+    /* Adjust other properties like padding or margin as needed */
+  }
+
 }
