@@ -55,5 +55,5 @@ tl.to(".page1 h2", {
 }, "anim")
 
 tl.to(".page1 video", {
-    scale: 1.5,
+    scale: 1.3,
 }, "anim")

@@ -6,6 +6,7 @@
     rgba(255, 255, 255, 0.85) 100%
   );
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -25,24 +26,52 @@ body {
 }
 
 .page1 {
-  min-height: 100vh;
+  min-height: 45vh;
   min-width: 100vw;
 }
 
-#nav {
-  height: 10vh;
-  width: 100vw;
-  /* background: blue; */
+.navbar-brand {
+  font-family: sans-serif;
+  margin-left: 10px;
+}
+
+.navbar-toggler {
+  margin-right: 10px;
+}
+
+#navbarNavAltMarkup {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vmax;
+  background-color: #ffff;
+}
+
+.navbar-nav a {
+  font-family: sans-serif;
+}
+
+/* #nav {
+  height: 7vh;
+  width: 100vw;
+  /* background: blue;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 #nav2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 5vw;
   padding: 0 30px;
 }
 
@@ -57,60 +86,63 @@ li {
 }
 
 #nav a {
+  flex-wrap: wrap;
   text-decoration: none;
-  font-size: 1.6vw;
+  font-size: 1.6vmax;
   font-weight: 500;
   text-transform: uppercase;
 }
 
 #nav h4:nth-child(1) {
   border-bottom: 1.5px solid #000000;
-}
+} */
 
 .page1 h1 {
-  font-size: 8vw;
+  font-size: 7vmax;
   font-weight: 500;
   font-family: Country market;
-  margin-top: 8vw;
-  margin-left: 14vw;
+  margin-top: 3.5vw;
+  margin-left: 25vw;
 }
 
 .page1 h2 {
-  font-size: 7vw;
+  font-size: 6.5vmax;
   font-weight: 500;
   font-family: Country market;
-  margin-left: 35vw;
+  margin-left: 40vw;
 }
 
 .page1 video {
   border-radius: 5%;
-  width: 35vw;
-  margin-top: 8vw;
+  width: 32vmax;
+  margin-top: 5vw;
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
 }
 
 .page2 {
-  min-height: 150vh;
-  width: 100vw;
+  min-height: 65vmax;
+  min-width: 100vw;
 }
 
 .intro-cards {
-  /* background: rgba(220, 220, 220, 0.907); */
-  margin-top: 25vh;
+  background: #ffff;
+  margin-top: 20vh;
   padding: 2rem;
 }
 
 .card {
-  display: flex;
+  display: flexbox;
   flex-direction: row;
+  margin-top: auto;
   justify-items: center;
   align-items: flex-start;
 }
 
 #card1,
 #card2 {
+  background: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,17 +154,22 @@ li {
 }
 
 .profile-pic {
-  width: 100%;
+  margin-top: 10px;
+  background: #ffff;
+  width: 75vmin ;
+  height: auto;
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 #card1 p,
 #card2 p {
+  background: #ffff;
   text-decoration: none;
-  font-size: 1.6vw;
-  margin-bottom: 2em;
+  font-size: 2.6vmin;
+  margin-top: auto;
+  margin-bottom: 0.5em;
   display: flex;
   align-items: start;
   justify-content: start;
@@ -141,11 +178,13 @@ li {
   font-weight: 550;
   color: black;
   padding: 1rem;
+  letter-spacing: 1px;
 }
 
 .socials {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .socials1,
@@ -183,3 +222,12 @@ li {
 .social-media {
   letter-spacing: 12px;
 }
+
+/* @media screen and (min-width: 480px) {
+  .page2{
+    height: auto;
+    width: auto;
+  }
+
+} */
+
