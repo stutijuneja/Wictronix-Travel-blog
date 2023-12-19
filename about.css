@@ -26,7 +26,6 @@ body {
 }
 
 .page1 {
-<<<<<<< HEAD
   min-height: 45vh;
   min-width: 100vw;
 }
@@ -41,20 +40,9 @@ body {
 }
 
 #navbarNavAltMarkup {
-=======
-  min-height: 100vh;
-  min-width: 100vw;
-}
-
-#nav {
-  height: 10vh;
-  width: 100vw;
-  /* background: blue; */
->>>>>>> 913d9e0a760b0e7a46cbb32dbc0b883451a14890
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 12px;
 }
 
 .navbar-nav {
@@ -100,11 +88,7 @@ li {
 #nav a {
   flex-wrap: wrap;
   text-decoration: none;
-<<<<<<< HEAD
   font-size: 1.6vmax;
-=======
-  font-size: 1.6vw;
->>>>>>> 913d9e0a760b0e7a46cbb32dbc0b883451a14890
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -130,42 +114,27 @@ li {
 
 .page1 video {
   border-radius: 5%;
-<<<<<<< HEAD
   width: 32vmax;
   margin-top: 5vw;
-=======
-  width: 35vw;
-  margin-top: 8vw;
->>>>>>> 913d9e0a760b0e7a46cbb32dbc0b883451a14890
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
 }
 
 .page2 {
-<<<<<<< HEAD
   min-height: 65vmax;
   min-width: 100vw;
-=======
-  min-height: 150vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between ;
->>>>>>> 913d9e0a760b0e7a46cbb32dbc0b883451a14890
 }
 
 .intro-cards {
   background: #ffff;
   margin-top: 20vh;
   padding: 2rem;
-  justify-content: space-between;
 }
 
 .card {
   display: flexbox;
   flex-direction: row;
-<<<<<<< HEAD
   margin-top: auto;
   justify-items: center;
   align-items: flex-start;
@@ -201,53 +170,10 @@ li {
   font-size: 2.6vmin;
   margin-top: auto;
   margin-bottom: 0.5em;
-=======
-  align-items:start;
-  column-gap: 4rem;
-}
-
-
-.card1 {
-  justify-content: flex-start;
-}
-
-.card2 {
-  justify-content: flex-end;
-}
-
-.card1,
-.card2 {
- width:  19vw;
-}
-
-.profile {
-  width: 25vw;
-}
-
-.card-img-1{
-  height: auto;
-  width: 20vw;
->>>>>>> 913d9e0a760b0e7a46cbb32dbc0b883451a14890
   display: flex;
   align-items: start;
-  justify-content: space-around;
-  margin-bottom: 2rem;
-}
-
-.card-img-2{
-  height: auto;
-  width: 22vw;
-  display: flex;
-  align-items: end;
-  justify-content: space-around;
-  margin-bottom: 2rem;
-}
-
-.card1 p,
-.card2 p {
-  text-decoration: none;
-  font-size: 1.5vw;
-  margin-bottom: 2em;
+  justify-content: start;
+  text-align: justify;
   font-family: sans-serif;
   font-weight: 550;
   color: black;
@@ -255,7 +181,6 @@ li {
   letter-spacing: 1px;
 }
 
-<<<<<<< HEAD
 .socials {
   display: flex;
   justify-content: space-between;
@@ -269,85 +194,33 @@ li {
   margin: 10px;
 }
 
-=======
-/* 
->>>>>>> 913d9e0a760b0e7a46cbb32dbc0b883451a14890
 .social-icons {
-  position: fixed;
-  display: flex;
+  position: absolute;
   align-items: center;
   justify-content: center;
   top: 100%;
-<<<<<<< HEAD
   left: 2;
   width: 100%;
-=======
-  left:auto;
-  width: 22vw;
->>>>>>> 913d9e0a760b0e7a46cbb32dbc0b883451a14890
   display: none;
   background: linear-gradient(to right, #22333b, #eae0d5);
   border-radius: 25px;
   padding: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 1;
-} */
+}
 
-/* .socials1:hover .social-icons,
+.socials1:hover .social-icons,
 .socials2:hover .social-icons {
   display: flex;
-} */
+}
 
-/* .social-icon {
-  margin-right: 5px;
+.social-icon {
+  margin-right: 0px;
   padding: 7px;
-} */
+}
 
 .social-media {
-  letter-spacing: 10px;
-}
-
-@media (max-width: 768px) {  /* This breakpoint can be adjusted based on your design */
-  .page1 {
-    display: flex;
-    flex-direction: column;
-    min-height: unset; /* Allow content to dictate height */
-}
-
-#nav {
-    height: auto; /* Adjust height as needed */
-    justify-content: space-between;
-  }
-
-  .page2 {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .intro-cards {
-    flex-direction: column;
-    margin-top: 0;
-  }
-
-  .card {
-    flex-direction: column;
-    align-items: flex-start; /* Adjust based on desired text alignment */
-    margin: 1rem 0;
-  }
-
-  .card1, .card2 {
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .social-icons {
-    width: 100%; /* Make icons full width on mobile */
-    left: 0; /* Remove offset on smaller screens */
-    top: auto; /* Show icons below instead of overlapping */
-    /* Adjust other properties like padding or margin as needed */
-  }
-
+  letter-spacing: 12px;
 }
 
 /* @media screen and (min-width: 480px) {
