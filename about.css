@@ -43,18 +43,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 12px;
 }
 
 .navbar-nav {
   display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 1.5vmax;
+  font-weight:300;
   background-color: #ffff;
 }
 
 .navbar-nav a {
   font-family: sans-serif;
+  font-weight: 530;
 }
 
 /* #nav {
